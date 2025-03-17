@@ -1,2 +1,8 @@
 fastapi
 uvicorn
+Pillow
+pandas
+numpy
+tensorflow
+joblib
+pydantic
