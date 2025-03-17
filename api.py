@@ -10,6 +10,7 @@ import joblib
 from pydantic import BaseModel
 from params import *
 
+
 # Initialiser l'API
 app = FastAPI()
 
