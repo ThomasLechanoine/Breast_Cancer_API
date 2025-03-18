@@ -2,11 +2,11 @@
 FROM python:3.10.6-buster
 
 # Définir le répertoire de travail dans le conteneur
-WORKDIR /app
+# WORKDIR /app
 
 # Copier les fichiers de dépendances et installer les dépendances
-COPY requirements.txt ./
-COPY params.py ./
+COPY requirements.txt .
+COPY params.py .
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
