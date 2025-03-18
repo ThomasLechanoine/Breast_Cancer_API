@@ -17,7 +17,7 @@ app = FastAPI()
 DL_MODEL_PATH = "/Deep_learning/models_saved/best_model.h5"
 print("yooooooooooooooo", os.path.dirname(os.path.abspath(__file__)))
 print("Chargement du modèle de deep learning...")
-model = load_model(os.path.join(DL_MODEL_PATH,os.path.dirname(os.path.abspath(__file__))))
+model = load_model(os.path.join(os.path.dirname(os.path.abspath(__file__)),DL_MODEL_PATH))
 print("✅ Modèle DL chargé avec succès.")
 
 # Fonction de prétraitement de l'image
