@@ -8,7 +8,7 @@ MODEL_TARGET = os.environ.get('MODEL_TARGET')
 BUCKET_MODEL = os.environ.get('BUCKET_MODEL')
 
 ####### Déterminer le chemin de base du projet (dossier contenant ce script)####
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ##################  CHEMINS DES DONNÉES  ##################
 ML_DATA_PATH = os.path.join(BASE_DIR, "Data", "Machine_learning.csv")
