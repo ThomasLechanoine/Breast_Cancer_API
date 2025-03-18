@@ -15,6 +15,7 @@ app = FastAPI()
 
 # Charger le modèle DL
 DL_MODEL_PATH = DL_MODEL_PATH
+print("yooooooooooooooo", DL_MODEL_PATH)
 print("Chargement du modèle de deep learning...")
 model = load_model(DL_MODEL_PATH)
 print("✅ Modèle DL chargé avec succès.")
