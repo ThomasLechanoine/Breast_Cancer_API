@@ -14,7 +14,7 @@ from params import *
 app = FastAPI()
 
 # Charger le modèle DL
-DL_MODEL_PATH = DL_MODEL_PATH
+DL_MODEL_PATH = "Deep_learning/models_saved/best_model.h5"
 print("yooooooooooooooo", DL_MODEL_PATH)
 print("Chargement du modèle de deep learning...")
 model = load_model(DL_MODEL_PATH)
@@ -67,8 +67,8 @@ async def predict(file: UploadFile = File(...)):
 # ------------------- Machine Learning Prediction -------------------
 
 # Charger le modèle Machine Learning
-ML_MODEL_PATH = ML_MODEL_PATH
-SCALER_PATH = ML_SCALER_PATH
+ML_MODEL_PATH = "Machine_learning/models_saved/ml_best_model.pkl"
+SCALER_PATH = "Machine_learning/models_saved/ml_scaler.pkl"
 
 print("Chargement du modèle de Machine Learning...")
 ml_model = joblib.load(ML_MODEL_PATH)
