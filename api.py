@@ -67,8 +67,10 @@ async def predict(file: UploadFile = File(...)):
 # ------------------- Machine Learning Prediction -------------------
 
 # Charger le modèle Machine Learning
-ML_MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),"Machine_learning", "models_saved", "ml_best_model.pkl")
-SCALER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),"Machine_learning", "models_saved", "ml_scaler.pkl")
+#ML_MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),"Machine_learning", "models_saved", "ml_best_model.pkl")
+#SCALER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),"Machine_learning", "models_saved", "ml_scaler.pkl")
+ML_MODEL_PATH = "Machine_learning/models_saved/ml_best_model.pkl"
+SCALER_PATH = "Machine_learning/models_saved/ml_scaler.pkl"
 
 print("Chargement du modèle de Machine Learning...")
 ml_model = joblib.load(ML_MODEL_PATH)
