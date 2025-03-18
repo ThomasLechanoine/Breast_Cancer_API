@@ -23,4 +23,8 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World come back and again again"}
+    return {"Hello": "World come back again"}
+
+# Charger le modèle Machine Learning
+ML_MODEL_PATH = ML_MODEL_PATH #<------------------------------------------------
+SCALER_PATH = ML_SCALER_PATH #<------------------------------------------------
