@@ -8,12 +8,12 @@ MODEL_TARGET = os.environ.get('MODEL_TARGET')
 BUCKET_MODEL = os.environ.get('BUCKET_MODEL')
 
 ####### Déterminer le chemin de base du projet (dossier contenant ce script)####
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ##################  CHEMINS DES DONNÉES  ##################
 # ML_DATA_PATH = os.path.join(BASE_DIR, "Data", "Machine_learning.csv")
 # DL_ZIP_PATH = os.path.join(BASE_DIR, "Data", "Data_prepros.zip")
-# DL_DATA_PATH = os.path.join(BASE_DIR, "Data", "Data_Deep_Learning")
+DL_DATASET_PATH = os.path.join(BASE_DIR, "Breast_Cancer_API", "Data", "Deep_Learning")
 
 ##################  CHEMINS DES MODÈLES  ##################
 DL_MODEL_PATH = os.path.join("Deep_learning", "models_saved", "best_model.h5")

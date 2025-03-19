@@ -8,3 +8,4 @@ joblib
 pydantic
 python-multipart
 scikit-learn
+matplotlib
