@@ -14,5 +14,5 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Commande pour exécuter l'application en utilisant uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8080"]
 #CMD uvicorn api.simple:app --host 0.0.0.0 --port $PORT
